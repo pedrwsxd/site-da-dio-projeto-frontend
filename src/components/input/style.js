@@ -25,3 +25,11 @@ export const InputText = styled.input`
     width: 100%;
     padding: 0 10px;
 `
+
+export const ErrorText = styled.p`
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color:rgb(228, 2, 2)
+`
