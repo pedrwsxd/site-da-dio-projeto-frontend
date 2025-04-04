@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+To register an account, you need to start the API first. Use the command `npm run api`, which will start the API locally on port 3001.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
