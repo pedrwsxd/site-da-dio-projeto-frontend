@@ -3,7 +3,7 @@ import React from 'react'
 import { Controller } from "react-hook-form"
 import { InputContainer, IconContainer, InputText, ErrorText } from './style'
 
-const Input = ({ leftIcon, name, errorMessage, control, ...rest }) => {
+const Input = ({ leftIcon, name, errorMessage, control, maxLength, ...rest }) => {
   return (
     <>
     <InputContainer>
@@ -12,7 +12,7 @@ const Input = ({ leftIcon, name, errorMessage, control, ...rest }) => {
         name={name}
         control={control}
         rules={{ required: true }}
-        render={({ field }) => <InputText {...field} {...rest} />}
+        render={({ field }) => <InputText {...field} maxLength={maxLength} {...rest}  />}
         />
     </InputContainer>
       {errorMessage ? <ErrorText>{errorMessage}</ErrorText> : null}

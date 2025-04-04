@@ -33,22 +33,22 @@ export const Title = styled.h2`
     font-size: 32px;
     font-weight: 700;
     color: #fff;
-    width: 320px;
+    width: 350px;
     margin-bottom: 20px;
     line-height: 44px;
 
 `
 
-export const TitleLogin = styled.p`
+export const TitleRegister = styled.p`
     font-family: 'Open Sans';
     font-size: 32px;
     font-weight: 700;
-    width: 320px;
+    width: 340px;
     margin-bottom: 20px;
     line-height: 44px;
 `
 
-export const SubTitleLogin = styled.p`
+export const SubTitleRegister = styled.p`
     font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 400;
@@ -56,22 +56,20 @@ export const SubTitleLogin = styled.p`
     line-height: 25px;
 `
 
-export const EsqueciText = styled.p`
+export const LoginText = styled.p`
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 700;
-    line-height: 19px;
+    color: #FFF;
 
-    color: #E5E044
 `
 
-export const CriarText = styled.p`
+export const LogarText = styled.span`
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 700;
-    line-height: 19px;
-
-    color: #E23DD7;
+    margin-left: 7px;
+    color: #23DD7A;
 
     &&:hover {
         cursor: pointer;

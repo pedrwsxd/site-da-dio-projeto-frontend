@@ -19,7 +19,7 @@ const schema = yup
     })
     .required()
 
-const Login = () => {
+const Login = ({onClick}) => {
 
     const navigate = useNavigate();
 
@@ -48,8 +48,8 @@ const Login = () => {
         }
     };
 
-    const handleClickSignIn = () => {
-
+    const handleClickRegister = () => {
+        navigate('/register')
     }
 
     return (<>
@@ -75,7 +75,7 @@ const Login = () => {
 
                     <Row>
                         <EsqueciText>Esqueci minha senha</EsqueciText>
-                        <CriarText>Criar conta</CriarText>
+                        <CriarText onClick={handleClickRegister}>Criar conta</CriarText>
                     </Row>
 
                 </Wrapper>

@@ -23,6 +23,10 @@ const Header = ({ autenticado, onClick }) => {
         navigate('/login')
     }
 
+    const handleClickRegister = () => {
+        navigate('/register')
+    }
+
     const handleClickHome = () => {
         navigate('/')
     }
@@ -49,7 +53,7 @@ const Header = ({ autenticado, onClick }) => {
                         <>
                             <MenuRight onClick={handleClickHome}>Home</MenuRight>
                             <Button title="Entrar" onClick={handleClickSignIn} />
-                            <Button title="Cadastrar" onClick={handleClickSignIn} />
+                            <Button title="Cadastrar" onClick={handleClickRegister} />
                         </>
                     )}
                 </Row>
